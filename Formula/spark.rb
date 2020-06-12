@@ -2,16 +2,16 @@
 class Spark < Formula
   desc "A simple cli to input and store your ideas directly with git and without a text editor"
   homepage ""
-  version "1.1.2"
+  version "1.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.2/spark_1.1.2_Darwin_x86_64.tar.gz"
-    sha256 "657a142e767e6efd00db1fa5d3e7c62d7a891d29e84d86ee7597a9cb488bbade"
+    url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.1/spark_1.1.1_Darwin_x86_64.tar.gz"
+    sha256 "9b7297174419338bd23d1952864b03901c78d7ad937e7d0c6cd774f9ddd67fd4"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.2/spark_1.1.2_Linux_x86_64.tar.gz"
-      sha256 "65d9f3f2093bacc20de3ddff51ca69e642e168fd974bab79d454cec083a15c41"
+      url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.1/spark_1.1.1_Linux_x86_64.tar.gz"
+      sha256 "31c5dc7ea5f4bc9f84e3a5d04c77a5a911e3a757e9df457af028b17a129528f5"
     end
   end
   
@@ -21,6 +21,6 @@ class Spark < Formula
   end
 
   def install
-    bin.install "bin/spark"
+    bin.install "spark"
   end
 end
