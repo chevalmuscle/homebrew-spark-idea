@@ -5,20 +5,20 @@
 class Spark < Formula
   desc "A simple cli to input and store your ideas directly with git and without a text editor"
   homepage ""
-  version "1.0.2"
+  version "1.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Chevalmuscle/spark/releases/download/v1.0.2/spark_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "df0cedd06c085f73db623878254ea1e4a82c6951194fc133977714e23cb47e80"
+      url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.2/spark_1.1.2_Darwin_arm64.tar.gz"
+      sha256 "0302e3a3173763fde4667f0b39bc27af43b42b2614ba36fb515d09f01f65c9d1"
 
       def install
         bin.install "spark"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Chevalmuscle/spark/releases/download/v1.0.2/spark_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "74ea119d45a668aa28fbcdeab30b7e2ff4c9ff2da289d3e71471e0fd77fe55f0"
+      url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.2/spark_1.1.2_Darwin_x86_64.tar.gz"
+      sha256 "e531831bb9aac21ad39ad2a620fa55cc6950f8422d0c51d9c7a3142773dfaf5c"
 
       def install
         bin.install "spark"
@@ -28,16 +28,16 @@ class Spark < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Chevalmuscle/spark/releases/download/v1.0.2/spark_1.0.2_Linux_arm64.tar.gz"
-      sha256 "9c2e093a893773cad7da7b7c15a78c343d18388ea178600f91416c9950705d5e"
+      url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.2/spark_1.1.2_Linux_arm64.tar.gz"
+      sha256 "631432f95962398333aad3913e357c3f390d48ede8e96bb0079190eb7dbdfe08"
 
       def install
         bin.install "spark"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Chevalmuscle/spark/releases/download/v1.0.2/spark_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "605f3de7662033726f7339793988e0da66f79fdbc1fcf2553553157b31041319"
+      url "https://github.com/Chevalmuscle/spark/releases/download/v1.1.2/spark_1.1.2_Linux_x86_64.tar.gz"
+      sha256 "41aab13e62efae54cef40e86585d6df45929f7108a39a369a7d6308e3ad5dba9"
 
       def install
         bin.install "spark"
